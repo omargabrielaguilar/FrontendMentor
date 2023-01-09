@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 15px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+/* En este proyecto implementare Mobile First */
+
+body {
+  width: 100%;
+  background-color: hsl(0, 0%, 97%);
+  height: 145vh;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.title {
+  width: 100%;
+}
+
+.title > h2 {
+  font-size: 21px;
+  font-weight: 200;
+  letter-spacing: 0.8px;
+  color: var(--Grayish-Blue);
+}
+
+.title > h1 {
+  font-size: 21.5px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.header > p {
+  width: 100%;
+  padding: 0rem 2rem;
+  color: var(--Grayish-Blue);
+  line-height: 1.4rem;
+}
+
+.container-items {
+  width: 90%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.item {
+  padding: 1rem 1.5rem;
+  background-color: var(--Very-Light-Gray);
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  box-shadow: 0px 4px 3px -1px hsl(234, 12%, 34%);
+  -webkit-box-shadow: 0px 4px 3px -1px hsl(234, 12%, 34%);
+  -moz-box-shadow: 0px 4px 3px -1px hsl(234, 12%, 34%);
+  border-radius: 10px;
+}
+
+.item > span {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item > img {
+  width: 100%;
+}
+
+.item-header {
+  width: 100%;
+}
+
+.item-header > h3 {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.item-header > p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.supervisor {
+  border-top: 6px solid var(--Cyan);
+}
+
+.team-builder {
+  border-top: 6px solid var(--Red);
+}
+
+.karma {
+  border-top: 6px solid var(--Orange);
+}
+
+.calculator {
+  border-top: 6px solid var(--Blue);
+}
+
+/* Repsonsive size */
+
+@media (max-width: 395px) {
+  body {
+    height: 155vh;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    height: 175vh;
+  }
+}
+
+@media (min-width: 686px) {
+  body {
+    height: 115vh;
+  }
+  .container {
+    width: 65%;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1020px) {
+  body {
+    height: 95vh;
+  }
+  .container {
+    width: 95%;
+  }
+
+  .container-items {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "start mid1 end"
+      "start mid2 end";
+    gap: 1.8rem;
+  }
+
+  .supervisor {
+    grid-area: start;
+    align-self: center;
+  }
+  
+  .team-builder {
+    grid-area: mid1;
+  }
+  
+  .karma {
+    grid-area: mid2;
+  }
+  
+  .calculator {
+    grid-area: end;
+    align-self: center;
+  }
+
+}
+
+
+@media (min-width: 1220px) {
+  body {
+    height: 120vh;
+  }
+  .container {
+    width: 95%;
+  }
+
+}

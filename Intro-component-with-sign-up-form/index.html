@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left top">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="rigth bottom">
+      <div class="right-top">
+        <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+      </div>
+
+      <form action="" class="form">
+
+        <div class="agrupar">
+        
+          <input class="input name" type="text" placeholder="First Name">
+          <div class="error nme">
+            <img src="./images/icon-error.svg" alt="error">
+            <p class="ph-error ">First Name cannot be empty</p>
+        
+          </div>
+        </div>
+
+        <div class="agrupar">
+          <input class="input" id="lastname" type="text"  placeholder="LastName"> 
+          <div class="error lstn">
+            <img src="./images/icon-error.svg" alt="error">
+            <p class="ph-error">Last Name cannot be empty</p>
+          </div>
+        </div>
+
+        <div class="agrupar">
+          <input class="input email" type="email"  placeholder="Email Address"> 
+          <div class="error em">
+            <img src="./images/icon-error.svg" alt="error">
+            <p class="ph-error">Looks like this is not an email</p>
+          </div>
+        </div>
+
+        <div class="agrupar">
+          <input class="input password"  type="password" placeholder="Password"> 
+          <div class="error pass">
+            <img src="./images/icon-error.svg" alt="error">
+            <p class="ph-error ">Password cannot be empty</p>
+          </div>
+        </div>
+
+        <footer>
+          <button class="btn" type="button">Claim your free trial </button>
+        
+        <p>
+          By clicking the button, you are agreeing to our <a href="http://papertoilet.com/" target="_blank">Terms and Services
+        </p> </a>
+        </footer>
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

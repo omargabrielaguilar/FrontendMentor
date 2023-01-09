@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="/dist/assets/favicon/checkout.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f7fff3551c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="m-0 p-0 box-border font-montserrat w-full">
+    <h1 class="h1 lg:my-8">Checkout</h1>
+
+    <div id="container" class="my-8 w-95 mx-auto flex flex-col lg:flex-row-reverse lg:justify-evenly lg:w-full">
+      <section
+        id="section-gray"
+        class="bg-gray-100 w-full self-center rounded-lg lg:w-30 flex flex-col gap-12 lg:self-start"
+      >
+        <div id="section-top" class="w-full flex flex-col gap-1">
+          <div id="options" class="options">
+            <img
+              class="w-36 rounded-2xl"
+              src="/dist/assets/images/photo1.png"
+              alt="package"
+            />
+            <div id="product" class=" w-full self-center flex flex-col gap-4">
+              <div class="w-full flex flex-col space-y-1">
+                <h4 class="text-zinc-700 font-bold">Vintage Backbag</h4>
+                <span class="flex space-x-3">
+                  <b class="text-orange-400 text-lg">$54.99</b>
+                  <p
+                    class="text-zinc-700 font-light line-through text-xs self-center"
+                  >
+                    $94.99
+                  </p>
+                </span>
+              </div>
+
+              <span
+                id="number"
+                class="flex p-4 border-1 border-gray-800 justify-between rounded-md items-center"
+              >
+                <button class="btn_rest-plus">-</button>
+                <p class="text-zinc-700 text-xl font-semibold">1</p>
+                <button class="btn_rest-plus">+</button>
+              </span>
+            </div>
+          </div>
+
+          <div id="options" class="options">
+            <img
+              class="w-36 rounded-2xl"
+              src="/dist/assets/images/photo2.png"
+              alt="package"
+            />
+            <div id="product" class="w-full self-center flex flex-col gap-4">
+              <div class="w-full flex flex-col space-y-1">
+                <h4 class="text-zinc-700 font-bold">Levi Shoes</h4>
+                <span class="flex space-x-3">
+                  <b class="text-orange-400 text-lg">$74.99</b>
+                  <p
+                    class="text-zinc-700 font-light line-through text-xs self-center"
+                  >
+                    $124.99
+                  </p>
+                </span>
+              </div>
+
+              <span
+                id="number"
+                class="flex w-full p-4 border-1 border-gray-800 justify-between rounded-md items-center"
+              >
+                <button class="btn_rest-plus">-</button>
+                <p class="text-zinc-700 text-xl font-semibold">1</p>
+                <button class="btn_rest-plus">+</button>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="section-footer" class="w-full flex flex-col gap-4 px-5">
+          <div id="shipping">
+            <hr class="bg-gray-900" />
+            <span class="flex justify-between mt-1">
+              <h3 class="font-semibold text-zinc-900">Shipping</h3>
+              <p class="font-semibold text-zinc-900">$19</p>
+            </span>
+          </div>
+          <div id="total" class="mb-6">
+            <hr class="bg-gray-900"/>
+            <span class="flex justify-between mt-1">
+              <h3 class="font-semibold text-zinc-900">Total</h3>
+              <p class="font-semibold text-zinc-900">$148.98</p>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <main id="form" class="w-full flex flex-col mt-10 lg:mt-0 gap-10 px-1 lg:px-0 lg:w-39 lg:gap-4">
+        <section id="contact" class="flex flex-col gap-1">
+          <h3 class="text-zinc-900 font-semibold text-lg tracking-tight">Contact information</h3>
+
+          <form action="" class="w-full flex flex-col">
+            <span id="cards">
+              <h5 class="h5">E-mail</h5>
+              <input
+                class="input"
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Enter your email..."
+              />
+              <i class="fa-solid fa-envelope icon"></i>
+            </span>
+
+            <span id="cards">
+              <h5 class="h5">Phone</h5>
+              <input
+                class="input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone..."
+              />
+              <i class="fa-solid fa-phone icon"></i>
+            </span>
+          </form>
+        </section>
+
+        <section id="shipping" class="flex flex-col gap-1">
+          <h3 class="text-zinc-900 font-semibold text-lg tracking-wide">Shipping address</h3>
+
+          <form action="">
+            <span id="cards">
+              <h5 class="h5">Full Name</h5>
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Omar Gabriel..."
+              />
+              <i class="fa-solid fa-user icon"></i>
+            </span>
+
+            <span id="cards">
+              <h5 class="h5">Address</h5>
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your address..."
+              />
+              <i class="fa-solid fa-house-user icon"></i>
+            </span>
+
+            <span id="cards">
+              <h5 class="h5">City</h5>
+              <input
+                class="input"
+                type="text"
+                name="City"
+                id="City"
+                placeholder="Your city..."
+              />
+              <i class="fa-solid fa-city icon"></i>
+            </span>
+
+            <div id="flex-items">
+              <span id="cards">
+                <h5 class="h5">Country</h5>
+                <input
+                  class="input"
+                  type="text"
+                  name="Country"
+                  id="Country"
+                  placeholder="Your country..."
+                />
+                <i class="fa-solid fa-globe icon"></i>
+              </span>
+
+              <span id="cards">
+                <h5 class="h5">Postal Code</h5>
+                <input
+                  class="input"  
+                  type="text"
+                  name="Postal Code"
+                  id="Postal Code"
+                  placeholder="Your postal code..."
+                />
+                <i class="fa-brands fa-usps icon"></i>
+              </span>
+            </div>
+
+            <div id="checkbox" class="w-full flex flex-col px-1">
+              <div class="flex w-full gap-2">
+                <input class="w-4 bg-gray-300" type="checkbox" name="checkbox" id="checkbox" />
+                <p class="self-center font-semibold text-xs">Save this information for next time</p>
+              </div>
+              <button class="bg-orange-400 mt-4 w-6/12 py-4 self-end rounded-lg font-semibold text-gray-50">Continue</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

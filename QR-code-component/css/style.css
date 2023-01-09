@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+/* Desktop 1350px */
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 0.7rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    margin: 0.3rem;
+}
+
+.header > img {
+    width: 92%;
+    align-self: center;
+    margin: 0.8rem auto;
+    border-radius: 0.7rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+}
+
+.section > h1 {
+    font-size: 1.6rem;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    line-height: 1.9rem;
+
+}
+
+.section > p {
+    color: var(--Grayish-blue);
+    font-weight: 400;
+    padding: 0 1.5rem;
+    letter-spacing: 0.4px;
+}
+
+/* dekstop 2 */
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 28%;
+    } 
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 34%;
+    } 
+}
+
+@media screen and (max-width: 688px) {
+    .container {
+        width: 50%;
+    } 
+}
+
+
+@media screen and (max-width: 670px) {
+    .container {
+        width: 90%;
+    } 
+}

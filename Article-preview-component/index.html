@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <img src="./images/drawers.jpg" alt="">
+    </header>
+
+    <div class="main_section">
+      <section class="section">
+        <h2>
+            Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home        
+        </h2>
+        <p>
+            Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.
+        </p>
+      </section>
+      <footer class="footer">
+        <div class="profile">
+          <div class="michelle">
+            <img src="./images/avatar-michelle.jpg" alt="michelle lady">
+            <span class="data">
+              <p class="name">
+                Michelle Appleton
+              </p>
+              <p class="date">
+                28 Jun 2020
+              </p>
+            </span>
+          </div>
+
+
+          <button onclick="setNewVisible()" onmouseover="setNewImage()" onmouseout="setOldImage()" class="share-img" id="btn-share">
+            <img 
+             id="hoveriano" src="./images/icon-share.svg" alt="">
+          </button>
+
+
+        </div>
+      
+  
+        <div class="share show">
+          <div class="share-left">
+            <p class="share-ph">
+              share
+            </p>
+            <div class="icons">
+              <img src="./images/icon-facebook.svg" alt="">
+              <img src="./images/icon-twitter.svg" alt="">
+              <img src="./images/icon-pinterest.svg" alt="">
+            </div>
+          </div>
+  
+          <button onclick="setNewVisible()" onmouseover="setNewImage()" onmouseout="setOldImage()" class="share-img icon" id="btn-share">
+            <img src="./images/icon-share-foot.svg" alt="">
+          </button>
+
+          
+        </div>
+        
+      </footer>
+    </div>
+    
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>

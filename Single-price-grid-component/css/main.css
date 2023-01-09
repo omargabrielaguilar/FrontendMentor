@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --background-body: rgba(218, 235, 241, 0.404);
+}
+
+/* dektop */
+
+* {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 90vh; /* MODO RESPONSIVE */
+    background-color: var(--background-body);
+}
+
+.container {
+    width: 42%;
+    margin: 2rem auto 0 auto;
+    border-radius: 13px;
+    display: block;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: white;
+}
+
+.header h2 {
+    padding: 2rem 2rem 0 2rem ;
+    color: var(--Cyan);
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.green-ph {
+    padding: 0 2rem;
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 1rem;
+}
+
+.gray-ph {
+    padding: 0 2rem;
+    line-height: 1.5rem;
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-section{
+    width: 100%;
+    display: flex;
+    color: var(--Light-Gray);
+}
+
+.left-section{
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    background-color: var(--Cyan);
+    display: block;
+    
+    padding: 2rem;
+}
+
+.left-section > h3 {
+    margin-bottom: 0.6rem;
+    color: var(--Light-Gray);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    color: var(--Light-Gray);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.price-ph{
+    color: var(--Light-Gray);
+    align-self: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.ph-monthly {
+    color: var(--Light-Gray);
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--Bright-Yellow);
+    border-radius: 6px;
+    color: white;
+    
+}
+
+.right-section {
+    width: 100%;
+    padding: 2rem;
+    border-bottom-right-radius: 8px;
+    background-color:  hsl(179, 57%, 55%);;
+    color: var(--Light-Gray);
+    font-weight: 700;
+}
+
+.right-section > h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.right-section > p {
+    letter-spacing: 1.3px;
+    padding-right: 2rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (max-width:1280px){
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width:1024px){
+    body {
+        height: 100vh; /* MODO RESPONSIVE */
+    }
+
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 688px){
+    body {
+        height: 90vh; /* MODO RESPONSIVE */
+    }
+
+    .container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+    
+    .left-section{
+        width: 100%;
+        border-bottom-left-radius: 0px;
+        display: flex;
+        flex-direction: column;    
+        padding: 0rem;
+    }
+    
+    .left-section > h3 {
+        padding: 2rem 2rem 0 2rem;
+    }
+    
+    .price {
+        padding: 0rem 2rem 0 2rem;
+    }
+    
+    .ph-monthly {
+        padding: 0rem 2rem 0 2rem;
+    }
+    
+    button {
+        padding: 0rem 2rem 0 2rem;
+        width: 80%;
+        align-self: center;
+        padding: 10px;
+        margin-bottom: 2rem;
+    }
+    
+    .right-section {
+        width: 100%;
+        padding: 0rem;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    
+    .right-section > h3 {
+        padding: 2rem 2rem 0 2rem;
+    }
+    
+    .right-section > p {
+        padding: 0rem 2rem 2rem 2rem;
+        letter-spacing: 1.3px;
+        padding-right: 2rem;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 687px){
+    body {
+        height: 100vh; /* MODO RESPONSIVE */
+    }
+
+    .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+}

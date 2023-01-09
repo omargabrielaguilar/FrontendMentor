@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* Desktop First */
+
+body {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: var(--White);
+}
+
+.container {
+  width: 80%;
+  margin: 8rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.top-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.top-left > h1 {
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+  font-size: 4rem;
+}
+
+.top-left > p {
+  color: var(--Dark-Grayish-Magenta);
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.top-right {
+  width: 60%;
+  gap: 1rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rated {
+  width: 65%;
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 1.5rem 0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+  justify-content: center;
+}
+
+.rated-icon {
+  width: 15%;
+}
+
+.ph-rated {
+  letter-spacing: 0.5px;
+}
+
+.rt-2 {
+  margin-left: 7rem;
+}
+
+.rt-3 {
+  margin-left: 14rem;
+}
+
+.main-section {
+  width: 100%;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.box {
+  width: 100%;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+}
+
+.box-header {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+}
+
+.box-header > img {
+  width: 13%;
+  border-radius: 50%;
+}
+
+.name-verified {
+  align-self: center;
+  color: var(--Light-Grayish-Magenta);
+}
+
+.name-verified > h3 {
+  margin-bottom: 0.4rem;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.name-verified > p {
+  color: var(--Soft-Pink);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.box-ph {
+  width: 100%;
+  margin-top: 20px;
+  color: var(--Light-Grayish-Magenta);
+  line-height: 1.4rem;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+}
+
+.irene {
+  margin-top: 1rem;
+}
+
+.anne {
+  margin-top: 2rem;
+}
+
+/* Media querys */
+@media (max-width: 1281px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1026px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 690px) {
+  .container {
+    width: 77%;
+    margin: 8rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .top-left {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .top-left > h1 {
+    font-size: 3rem;
+  }
+
+  .top-left > p {
+    letter-spacing: 1.4px;
+    font-size: 16px;
+  }
+
+  .top-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rated {
+    width: 100%;
+    padding: 1.9rem 0;
+    flex-direction: column;
+  }
+
+  .rated-icon {
+    width: 5%;
+  }
+
+  .ph-rated {
+    letter-spacing: 0.5px;
+  }
+
+  .rt-2 {
+    margin-left: 0;
+  }
+
+  .rt-3 {
+    margin-left: 0;
+  }
+
+  .main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+
+  .box-header > img {
+    width: 13%;
+    border-radius: 50%;
+  }
+
+
+  .name-verified > p {
+    color: var(--Soft-Pink);
+    font-weight: 500;
+    letter-spacing: 0.4px;
+  }
+
+  .box-ph {
+    width: 100%;
+    margin-top: 20px;
+    color: var(--Light-Grayish-Magenta);
+    line-height: 1.4rem;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+  }
+
+  .irene {
+    margin-top: 0;
+  }
+
+  .anne {
+    margin-top: 0;
+  }
+}

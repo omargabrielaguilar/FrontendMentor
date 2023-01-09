@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../dist/img/gallery.png"
+      type="image/x-icon"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full grid place-content-center font-nunito  m-0 p-0 box-border">
+    <div id="container" class="w-10/12 mx-auto my-10 flex flex-col">
+      <header id="header" class="w-full flex flex-col space-y-4 content-center mb-10">
+        <sectio id="top-header" class="w-full mx-auto">
+          <div class="w-6/12 xl:w-1/6 flex mx-auto">
+            <img
+              class="w-full rounded-xl"
+              src="../dist/img/profilePhoto.png"
+              alt="profile"
+            />
+          </div>
+        </sectio>
+        <section id="ph-header" class="mx-auto flex flex-col space-y-1 ">
+          <h2 class="text-gray-600 font-semibold text-lg tracking-wider text-center">Rodney Cotton</h2>
+          <p class="text-gray-600 font-normal text-sm tracking-wider text-center">Helsinki, Finland</p>
+        </section>
+        <section id="box-data" class="w-full flex mx-auto justify-center gap-4 xl:w-8/12">
+          <div class="bg-gray-200 px-4 py-1.5 text-center rounded-xl w-full" id="box">
+            <h3 class="text-gray-600 font-bold tracking-tighter">100</h3>
+            <p class="text-gray-400 font-light tracking-tighter">Posts</p>
+          </div>
+
+          <div class="bg-gray-200 px-4 py-1.5 text-center rounded-xl w-full" id="box">
+            <h3 class="text-gray-600 font-bold tracking-tighter">2,242</h3>
+            <p class="text-gray-400 font-light tracking-tighter" >Followers</p>
+          </div>
+
+          <div class="bg-gray-200 px-4 py-1.5 text-center rounded-xl w-full" id="box">
+            <h3 class="text-gray-600 font-bold tracking-tighter">1,432</h3>
+            <p class="text-gray-400 font-light tracking-tighter">Following</p>
+          </div>
+        </section>
+      </header>
+
+      <main id="grid-img" class="w-full grid grid-cols-3 grid-rows-3 gap-4 xl:w-10/12 mx-auto">
+        <img class="rounded-lg h-full col-start-1 col-end-2" src="../dist/img/photo1.png" alt="" />
+        <img class="rounded-lg h-full col-start-2 col-end-4" src="../dist/img/photo2.png" alt="" />
+        <img class="rounded-lg h-full col-start-1 col-end-3 row-start-2 row-end-3" src="../dist/img/photo3.png" alt="" />
+        <img class="rounded-lg h-full col-start-3 col-end-4 row-start-2 row-end-4" src="../dist/img/photo4.png" alt="" />
+        <img class="rounded-lg h-full col-start-1 col-end-2 row-start-3 row-end-4" src="../dist/img/photo6.png" alt="" />
+        <img class="rounded-lg h-full col-start-2 col-end-3 row-start-3 row-end-4" src="../dist/img/photo5.png" alt="" />
+      
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+
+body {
+    height: 100vh;
+    position: relative;
+    background: var(--Dark-cyan);
+    color: var(--Very-dark-desaturated-blue);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+}
+.top-bg {
+    position: absolute;
+    background: url("/images/bg-pattern-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 850px;
+    top: -528px;
+    left: -284px;
+}
+.bottom-bg {
+    position: absolute;
+    background: url("/images/bg-pattern-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 850px;
+    bottom: -628px;
+    right: -250px;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.banner {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.victor {
+    border-radius: 50%;
+    border: 6px solid white;  
+    position: absolute;  
+    bottom: -40px;
+    right: 150px;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.section-top {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.section-top > h1 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.section-top > span {
+    align-self: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Dark-gray);
+}
+
+.city {
+    align-self: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--Dark-gray);
+}
+
+hr {
+    background-color: var(--Dark-gray);
+}
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    align-items: center;
+}
+
+.social-proof {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-proof > p {
+    color: var(--Very-dark-desaturated-bluey);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.social-proof > span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width:1440px) {
+    
+    .container {
+        width: 30%;
+    }
+    .top-bg {
+        height: 980px;
+        width: 980px;
+    }
+    .bottom-bg {
+        height: 980px;
+        width: 980px;
+    }
+    .victor {
+        bottom: -40px;
+        right: 155px;
+    }
+}
+
+
+@media only screen and (max-width:1280px) {
+    
+    .container {
+        width: 35%;
+    }
+    .top-bg {
+        height: 990px;
+        width: 990px;
+    }
+    .bottom-bg {
+        height: 990px;
+        width: 990px;
+    }
+    .victor {
+        bottom: -40px;
+        right: 165px;
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+    
+    .container {
+        width: 40%;
+    }
+    .top-bg {
+        height: 890px;
+        width: 890px;
+    }
+    .bottom-bg {
+        height: 890px;
+        width: 890px;
+    }
+    .victor {
+        bottom: -40px;
+        right: 145px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    
+    .container {
+        width: 40%;
+    }
+    .top-bg {
+        height: 890px;
+        width: 890px;
+    }
+    .bottom-bg {
+        height: 890px;
+        width: 890px;
+    }
+    .victor {
+        bottom: -40px;
+        right: 145px;
+    }
+}
+
+@media only screen and (max-width:688px) {
+    
+    .container {
+        width: 50%;
+    }
+    .top-bg {
+        height: 1050px;
+        width: 750px;
+    }
+    .bottom-bg {
+        height: 1050px;
+        width: 750px;
+    }
+    .victor {
+        bottom: -40px;
+        right: 115px;
+    }
+}
+
+@media only screen and (max-width:687px) {
+    
+    .container {
+        width: 80%;
+    }
+    .top-bg {
+        height: 1050px;
+        width: 750px;
+    }
+    .bottom-bg {
+        height: 850px;
+        width: 750px;
+    }
+    .victor {
+        bottom: -40px;
+        right: 100px;
+    }
+}

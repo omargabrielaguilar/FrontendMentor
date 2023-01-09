@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    --Dark-cyan :hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size-paragraph: 14px;
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+    
+}
+
+/* Mobile First 375px */
+.img-dk {
+    display: none;
+}
+
+body {
+    background-color: var(--Cream);
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 88%;
+    margin: 1.50rem auto;
+    background-color: var(--White);
+    border-radius:8px;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header > img {
+    width: 100%;
+    margin: 0 auto;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 3px;
+}
+
+.section-header {
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 0.51rem;
+    
+}
+
+.section-header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.81rem;
+    letter-spacing: 0.27rem;
+    color: var(--Dark-grayish-blue);
+    margin: 0;
+    padding: none;
+}
+
+.section-header h1 {
+    font-weight: 400;
+    font-size: 1.81rem;
+    padding: 1px;
+    line-height: 1.9rem;
+} 
+
+.section-ph {
+    padding: 1px;
+    width: 100%;
+}
+
+.section-ph p {
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    color: var(--Dark-grayish-blue);
+    padding-right: 10px;
+}
+
+
+.section-price {
+    width: 100%;
+    margin: auto;
+    padding: 1px;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.green-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: var(--Dark-cyan);
+}
+
+.normal-price {
+    font-size: 0.80rem;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.box-add {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--Dark-cyan);
+    margin: 0 auto;
+    padding: 12px;
+    justify-content: center;
+    gap: 0.81rem;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--White);
+    border-radius: 8px;
+    border: 0px solid black;
+}
+.box-add:hover {
+    background-color: hsl(159, 56%, 21%);
+
+}
+
+
+/* Responsive, ahora desktop */
+@media screen and (min-width: 1366px) {
+    .img-dk {
+        display: block;
+    }
+    
+    .img-mb {
+        display:none;
+    }
+
+
+    .content {
+        flex-direction: row;
+        width: 45%;
+        gap: 1.5rem;
+        margin: 4rem auto;
+        background-color: var(--White);
+        border-radius:8px;
+    }
+
+    header > img {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        gap: 1.2rem;
+        margin: 0rem auto;
+        padding: 3px;
+    }
+
+    .section-header {
+        gap: 1.51rem;
+    }
+
+    .section-header h1 {
+        font-size: 2.1rem;
+        padding: 0px 4.5rem 0px 1px;
+    } 
+    
+    .section-ph {
+        padding: 1px;
+        width: 100%;
+    }
+    
+    .section-ph p {
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        line-height: 1.4rem;
+        color: var(--Dark-grayish-blue);
+        padding-right: 3rem;
+    }
+    
+    .footer {
+        width: 100%;
+        padding-right: 1rem;
+    }
+    .box-add {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: var(--Dark-cyan);
+        margin: 0 auto;
+        padding: 12px;
+        justify-content: center;
+        gap: 0.81rem;
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--White);
+        border-radius: 8px;
+        border: 0px solid black;
+    }
+
+}
+

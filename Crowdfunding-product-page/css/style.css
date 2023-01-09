@@ -1,0 +1,937 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Commissioner", sans-serif;
+  border: none;
+}
+
+:root {
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-gray: hsl(0, 0%, 48%);
+}
+
+/* Desktop first */
+
+body {
+  width: 100%;
+  min-height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black {
+    opacity: 0.59;
+}
+
+.container {
+  width: 100%;
+  min-height: 150vh;
+  margin: auto;
+  display: flex;
+  background-color: #e6e6e6;
+  flex-direction: column;
+}
+
+
+.nav-div {
+  background: url("../images/image-hero-desktop.jpg") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  width: 85%;
+  display: flex;
+  margin: 2rem auto 0 auto;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 12%;
+  height: auto;
+}
+
+.nav_right {
+  display: flex;
+  gap: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.mobile-list_nav {
+  display: none;
+}
+
+.logo_burger {
+  display: none;
+}
+
+/* Para todo los sections */
+
+section {
+  width: 48%;
+  padding: 2rem 2rem 1rem 2rem;
+  border: 1px solid hsl(0, 0%, 87%);
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  margin: auto;
+}
+
+/* Inicio Mastercrft Bamboo */
+.sectionMastercraftBamboo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0rem;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  bottom: 4rem;
+  z-index: 2;
+}
+
+.headerMastercraftBamboo {
+  width: 100%;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.headerMastercraftBamboo > img {
+  width: 50px;
+}
+
+.title_mastercraftBamboo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.title_mastercraftBamboo > h1 {
+  font-size: 25px;
+}
+
+.title_mastercraftBamboo > p {
+  color: var(--Dark-gray);
+  font-size: 15px;
+  line-height: 1.4rem;
+}
+
+.button_mastercraftBamboo {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+  gap: 5rem;
+  margin-bottom: 1rem;
+}
+
+.backThisProject,
+.bookmark {
+  height: 8vh;
+  align-self: flex-end;
+  border-radius: 50px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+
+.backThisProject {
+  background-color: var(--Moderate-cyan);
+  padding: 0 2.5rem;
+  color: white;
+}
+
+.backThisProject:hover {
+  background-color: var(--Dark-cyan);
+}
+
+.bookmark {
+  width: 30%;
+  display: flex;
+  gap: 1rem;
+}
+
+.bookmark > p {
+  align-self: center;
+  font-weight: 700;
+  color: var(--Dark-gray);
+}
+
+.bookmark > img {
+  min-width: 8vh;
+  height: 8vh;
+}
+
+/* Fin Mastercrft Bamboo  */
+
+/* Inicio Money Recolectado */
+
+.moneyRecolectado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  bottom: 2rem;
+  z-index: 2;
+  padding-bottom: 2rem;
+  gap: 0.6rem;
+}
+
+.money-list {
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.money_container {
+  width: 100%;
+  border-right: 1px solid black;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.mc3 {
+  border-right: 0px solid black;
+  padding-right: 0rem;
+}
+
+.money_container > h3 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--Black);
+}
+
+.money_container > p {
+  color: var(--Dark-gray);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.bar_progress-money {
+  width: 100%;
+  height: 1.8vh;
+  border-radius: 15px;
+  background-color: #e6e6e6;
+}
+
+.bar {
+  width: 80%;
+  height: 1.8vh;
+  border-radius: 15px;
+  background-color: var(--Moderate-cyan);
+}
+
+/* Fin Money Recolectado */
+
+/* Inicion AboutProject */
+
+.AboutProject {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 3rem 2rem 2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.titleAbout {
+  width: 100%;
+  font-size: 1.2rem;
+  letter-spacing: 0.7px;
+}
+
+.ph_About {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ph_About > p {
+  font-size: 14.6px;
+  line-height: 1.4rem;
+  color: var(--Dark-gray);
+}
+
+.list_projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header_project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_project > h4 {
+  color: var(--Black);
+  font-weight: 700;
+  font-size: 16.5px;
+}
+
+.pledge {
+  color: var(--Moderate-cyan);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  font-size: 13.5px;
+  align-self: center;
+}
+
+.project > p {
+  width: 100%;
+  color: var(--Dark-gray);
+  letter-spacing: 0.4px;
+  font-size: 14px;
+  line-height: 1.2rem;
+  font-weight: 500;
+}
+
+.price_project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  align-self: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ph {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.left {
+  align-self: center;
+  color: var(--Dark-gray);
+  font-weight: 500;
+}
+
+.btn_select {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background-color: var(--Moderate-cyan);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+}
+
+.btn_select:hover {
+  background-color: var(--Dark-cyan);
+}
+
+.mahogany > h4,
+.pledge_mahogany,
+.p3 {
+  color: gray;
+}
+
+.btn_mahogany {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  background-color: gray;
+}
+
+.btn_mahogany:hover {
+  background-color: rgb(83, 82, 82);
+}
+
+/* Fin AboutProject */
+
+/* Inicia ModalStart */
+
+.modalProject {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.headerModalProject {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalProjecth2 {
+  font-size: 22px;
+}
+
+.iconCloseModal {
+  width: 15px;
+  align-self: flex-start;
+  height: 2.5vh;
+  cursor: pointer;
+}
+
+.modalProjectph {
+  font-size: 15px;
+  color: var(--Dark-gray);
+}
+
+.listModals {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modalsChooseIt {
+  border: 1px solid #e6e6e6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.headerChooseIt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftChooseIt {
+  display: flex;
+  gap: 1rem;
+}
+
+.checkboxModal {
+  width: 22px;
+  height: 3vh;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.checkActivate {
+  width: 45%;
+  height: 1.5vh;
+  align-self: center;
+  background-color: var(--Dark-cyan);
+  border-radius: 50%;
+}
+
+.span_left {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.span_left > h4 {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.span_left > h4:hover {
+    color: var(--Dark-cyan);
+  }
+
+.span_left > p {
+  font-size: 14px;
+  color: var(--Moderate-cyan);
+  font-weight: 700;
+}
+
+.priceChooseModal {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.phPriceChoose {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.phLeftChoose {
+  align-self: center;
+  color: var(--Dark-gray);
+}
+
+.modalsChooseIt > p {
+  color: var(--Dark-gray);
+  padding-left: 2rem;
+  line-height: 1.4rem;
+  font-size: 14px;
+}
+
+.pledgeChooseIt {
+  display: flex;
+  padding: 1.5rem 0 0.5rem 0;
+  border-top: 1px solid #e6e6e6;
+  justify-content: space-between;
+}
+
+.pledgeChooseIt > p {
+  width: 100%;
+  align-self: center;
+  color: var(--Dark-gray);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+.buttonsPledge {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+#pricePledge {
+  width: 30%;
+  background-color: white;
+  border: 1px solid var(--Dark-cyan);
+  padding: 0.55rem 0;
+  border-radius: 20px;
+}
+
+#pricePledge::placeholder {
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  font-size: 13px;
+}
+
+#pricePledge:value {
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  font-size: 13px;
+}
+
+.btn_continue-pledge {
+  width: 40%;
+  background-color: var(--Moderate-cyan);
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.btn_continue-pledge:hover {
+  background-color: var(--Dark-cyan);
+}
+
+.mahoganyModals, .mahoganyModalsSpan_Left > p  {
+    color: var(--Dark-gray);
+}
+
+.mahoganyModalsSpan_Left > h4 {
+    font-size: 10px;
+    text-decoration: line-through;
+    align-self: center;
+}
+
+.mahoganyModalsSpan_Left > p  {
+    font-size: 13px;
+    align-self: center;
+    text-decoration: line-through;
+}
+.mahoganyModals {
+    cursor: help;
+}
+
+.mahoganyModalsPrice > .phLeftChoose {
+    align-self: center;
+}
+/* Fin ModalStart */
+
+/* Mobile part */
+
+/* Inicio ThankModal*/
+
+.modalThanks {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.modalThanksImg {
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+.modalThanksText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.modalThanksText > h4 {
+  font-size: 20px;
+}
+
+.modalThanksText > p {
+  width: 90%;
+  margin: auto;
+  letter-spacing: 0.5px;
+  color: var(--Dark-gray);
+  font-size: 14px;
+}
+
+.btn-Thanks {
+margin-top: 1rem;
+  width: 25%;
+  padding: 0.7rem 0;
+  background-color: var(--Moderate-cyan);
+  font-weight: 700;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.btn-Thanks:hover {
+  background-color: var(--Dark-cyan);
+}
+/* Fin ThankModal*/
+
+.inactive {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  /* Nav parte */
+  .logo {
+    width: 50%;
+    height: 3vh;
+    align-self: center;
+  }
+  .logo_burger {
+    display: block;
+    width: 25px;
+    height: 3vh;
+  }
+  .nav-div {
+    background: url("../images/image-hero-mobile.jpg") no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
+  .nav_right {
+    display: none;
+  }
+
+  .burger_menu {
+    display: block;
+  }
+
+  .mobile-list_nav {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background-color: white;
+    color: var(--Black);
+    border-radius: 8px;
+    min-height: 25%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 11;
+  }
+
+  .visible {
+    visibility: visible;
+  }
+
+  .mobile-list_nav a {
+    color: var(--Black);
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  /* Fin nav part */
+  /* Para todo los sections */
+
+  section {
+    width: 90%;
+    padding: 0rem 1rem 1rem 1rem;
+  }
+
+  /* Inicio Mastercrft Bamboo */
+  .sectionMastercraftBamboo {
+    z-index: 10;
+  }
+
+  .title_mastercraftBamboo > h1 {
+    font-size: 22px;
+  }
+
+  .title_mastercraftBamboo > p {
+    margin-top: 0.5rem;
+    letter-spacing: 0.2px;
+  }
+
+  .button_mastercraftBamboo {
+    margin-top: 1.5rem;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .backThisProject {
+    width: 70%;
+    padding: 0 0.5rem;
+    height: 6vh;
+  }
+
+  .bookmark {
+    width: 20%;
+    display: flex;
+    gap: 1rem;
+    height: 6vh;
+  }
+
+  .bookmark > p {
+    display: none;
+  }
+
+  .bookmark > img {
+    width: 4vh;
+    height: 6vh;
+  }
+
+  /* Fin Mastercrft Bamboo  */
+
+  /* Inicio Money Recolectado */
+
+  .moneyRecolectado {
+    top: 80%;
+    padding-top: 1.3rem;
+  }
+
+  .money-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .money_container {
+    border-right: none;
+    padding-right: 2rem;
+    text-align: center;
+  }
+
+  .mc3 {
+    padding-right: 2rem;
+  }
+
+  .money_container > h3 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--Black);
+  }
+
+  .money_container > p {
+    color: var(--Dark-gray);
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .bar_progress-money {
+    width: 100%;
+    height: 1.3vh;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+  }
+
+  .bar {
+    width: 80%;
+    height: 1.3vh;
+    border-radius: 15px;
+  }
+
+  /* Fin Money Recolectado */
+
+  /* Inicion AboutProject */
+  .header_project {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: flex-start;
+  }
+
+  .pledge {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 13.5px;
+    align-self: flex-start;
+  }
+
+  .project > p {
+    margin-top: 0.7rem;
+    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 1.4rem;
+    font-weight: 500;
+  }
+
+  .price_project {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .price {
+    align-self: flex-start;
+  }
+
+  .btn_select {
+    margin-top: 1rem;
+    width: 70%;
+    padding: 0.8rem 2.4px;
+    border-radius: 50px;
+  }
+
+  .btn_mahogany {
+    margin-top: 1rem;
+    width: 70%;
+    padding: 0.8rem 2.4px;
+  }
+
+  /* Fin AboutProject */
+
+  /* Incia ModalStart */
+
+  .modalProject {
+    padding-top: 1.5rem;
+  }
+
+  .modalProjecth2 {
+    font-size: 20px;
+  }
+
+  .iconCloseModal {
+    height: 2vh;
+  }
+
+  .modalProjectph {
+    font-size: 14px;
+    color: var(--Dark-gray);
+  }
+
+  .modalsChooseIt {
+    gap: 1rem;
+  }
+
+  .checkboxModal {
+    width: 30px;
+  }
+
+  .span_left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .priceChooseModal {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .phPriceChoose {
+    align-self: center;
+  }
+
+  .pledgeChooseIt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 0 0.5rem 0;
+    border-top: 1px solid #e6e6e6;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pledgeChooseIt > p {
+    font-size: 16px;
+  }
+
+  .buttonsPledge {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  /* Fin ModalStart */
+  /* Inicio ThankModal*/
+
+.modalThanks {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  /* Fin Thank Modal */
+  
+  .inactive {
+    display: none;
+  }
+}

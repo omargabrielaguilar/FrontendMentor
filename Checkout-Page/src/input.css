@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h1 {
+    @apply font-semibold text-2xl mt-8 ml-4 text-zinc-600 tracking-wide lg:ml-left
+}
+
+.options {
+    @apply w-full flex gap-8 px-4 mt-5
+}
+
+.btn_rest-plus {
+    @apply w-1 py-0 px-3 flex justify-center bg-gray-300 rounded-md text-2xl text-zinc-900 font-semibold
+}
+
+.h5 {
+    @apply text-zinc-900 font-semibold text-sm
+}
+
+.input {
+    @apply w-full relative border-1 border-zinc-400 py-2 pl-10 font-semibold text-sm rounded-lg lg:py-3 lg:mt-2
+}
+
+.icon {
+    @apply relative left-3 bottom-ideal lg:bottom-ideal_desktop
+}

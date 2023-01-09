@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  text-decoration: none;
+}
+
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+  --gradient-white-1: hsl(0, 0%, 100%);
+  --gradient-white-2: hsl(0, 100%, 98%);
+  --gradiente-pink-1: hsl(0, 80%, 86%);
+  --gradient-pink-2: hsl(0, 74%, 74%);
+}
+
+body {
+  background-color: var(--gradiente-white-2);
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  position: relative;
+}
+
+.mobile {
+  display: none;
+}
+
+header {
+  position: relative;
+  background: url("../images/hero-desktop.jpg") no-repeat;
+  width: 80%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.section {
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 5rem;
+}
+
+.text-main {
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.text-main > h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.6rem;
+  font-weight: 600;
+  line-height: 4.2rem;
+  color: var(--Dark-Grayish-Red);
+}
+
+h1 > b {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.6rem;
+  font-weight: 300;
+  color: var(--Desaturated-Red);
+}
+
+.desktop {
+  width: 10rem;
+  position: absolute;
+  left: 5rem;
+  top: 3rem;
+}
+
+.text-main > p {
+  margin-top: 20px;
+  color: var(--Desaturated-Red);
+  width: 80%;
+  letter-spacing: 1px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+}
+
+.input-part {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.email {
+    width: 100%;
+  border: 1px solid rgb(217, 215, 215);
+  padding: 0.9rem 1rem;
+  border-radius: 20px;
+}
+
+.email::placeholder {
+  font-size: 14px;
+}
+
+.error {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  visibility: hidden;
+}
+
+.error > img {
+  width: 18px;
+  position: relative;
+  align-self: flex-end;
+  top: 15px;
+  left: 23rem;
+}
+
+.error > p {
+  position: relative;
+  top: 3.4rem;
+  left: -0.2rem;
+  font-size: 13px;
+  color: var(--Desaturated-Red);
+}
+
+.btn {
+  width: 13%;
+  border-radius: 40%;
+  height: auto;
+  position: relative;
+  right: 4rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(253, 237, 237, 1) 0%,
+    rgba(251, 215, 215, 1) 2%,
+    rgba(249, 202, 202, 1) 7%,
+    rgba(248, 191, 191, 1) 61%
+  );
+}
+
+.btn:hover {
+  background: rgb(252, 217, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 217, 217, 1) 40%,
+    rgba(248, 191, 191, 1) 94%
+  );
+}
+
+
+/* Mobilie */
+
+@media (max-width:800px) {
+    .container {
+        flex-direction: column;
+        gap: 1.3rem;
+      }
+      
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+        width: 6rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+      }
+      
+      header {
+        position: relative;
+        background: url("../images/hero-mobile.jpg") no-repeat center center;
+        width: 100%;
+        background-size: cover;
+        height: 50vh;
+      }
+      
+      .section {
+        width: 100%;
+        position: relative;
+        align-self: center;
+        padding: 1rem;
+      }
+      
+      .text-main {
+        text-align: center;
+        margin-top: 2rem;
+        width: 100%;
+      }
+      
+      .text-main > h1 {
+        font-size: 2.6rem;
+        letter-spacing: 1rem;
+        line-height: 3.2rem;
+      }
+      
+      h1 > b {
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+      }
+      
+      .text-main > p {
+        width: 100%;
+      }
+      
+      form {
+        width: 100%;
+        display: flex;
+      }
+      
+      .input-part {
+        align-items: center;
+        width: 100%;
+      }
+      
+      .email {
+        width: 80%;
+      }
+      
+      .email::placeholder {
+        font-size: 14px;
+      }
+      
+      .error {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        visibility: hidden;
+      }
+      
+      .error > img {
+        width: 18px;
+        position: relative;
+        align-self: flex-end;
+        top: 15px;
+        left: 16rem;
+      }
+      
+      .error > p {
+        position: relative;
+        top: 3.4rem;
+        left: 1.8rem;
+        font-size: 13px;
+        color: var(--Desaturated-Red);
+      }
+      
+      .btn {
+        width: 13%;
+        border-radius: 40%;
+        height: auto;
+        position: relative;
+        right: 4rem;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(253, 237, 237, 1) 0%,
+          rgba(251, 215, 215, 1) 2%,
+          rgba(249, 202, 202, 1) 7%,
+          rgba(248, 191, 191, 1) 61%
+        );
+      }
+}
