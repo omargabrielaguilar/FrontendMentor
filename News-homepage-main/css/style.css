@@ -36,6 +36,12 @@ ul{
   display: flex;
   gap:2rem;
   align-self: center;
+  color: var(--Dark-grayish-blue);
+  cursor:pointer;
+}
+
+.navigation-list li:hover {
+  color: var(--Soft-red);
 }
 
 .main-section {
@@ -89,7 +95,7 @@ ul{
 }
 
 .btn {
-  width: 50%;
+  width: 55%;
   border: none;
   padding: 1rem 0;
   background-color: var(--Soft-red);
@@ -98,7 +104,11 @@ ul{
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-size: 13px;
+  cursor: pointer;
+}
 
+.btn:hover {
+  background-color: var(--Very-dark-blue);
 }
 
 /* header news section */
@@ -125,14 +135,63 @@ ul{
 .news h3 {
   color: var(--Off-white);
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.news h3:hover {
+  color: var(--Soft-orange);
 }
 
 .news p {
   color:var(--Grayish-blue);
   margin-top: 8px;
+  font-size: 14px;
 }
 
 .no-border {
   padding: 1.8rem 0 0 0;
   border: none;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-item {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-item img {
+  width: 30%;
+}
+
+.text-item{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.text-item h2 {
+  color: var(--Grayish-blue);
+  font-size: 1.6rem;
+}
+
+.text-item h5 {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.text-item p {
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+}
+
+.text-item h5:hover {
+  color: var(--Soft-red);
 }
