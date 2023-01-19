@@ -212,6 +212,8 @@ ul{
 /* Responsive design now */
 
 @media (max-width:414px) {
+  
+
     body {
       width: 90%;
     }
@@ -290,7 +292,8 @@ ul{
     .mobile-nav {
       display: block;
       position: absolute;
-      left: 30%;
+      left: 35%;
+      top: 0%;
       height: 100%;
       background-color: white;
       width: 65%;
@@ -300,7 +303,9 @@ ul{
 
     .mobile-burger-close {
       cursor:pointer;
-      margin-bottom: 4.5rem;
+      margin-top: 2rem;
+      margin-right: 1.5rem;
+      margin-bottom: 5rem;
     }
     
     .mobile-nav li {
@@ -319,5 +324,6 @@ ul{
     .navList-mobile {
       visibility: visible;
     }
+
 }
 
