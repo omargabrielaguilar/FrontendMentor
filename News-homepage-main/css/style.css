@@ -47,6 +47,7 @@ ul{
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-bottom: 3rem;
+  gap: 1.5rem;
 }
 
 .header-bright_section {
@@ -72,7 +73,6 @@ ul{
   line-height: 3rem;
   font-weight: 900;
   letter-spacing: 0.1rem;
-  align-self: center;
 }
 
 .description_section {
@@ -101,9 +101,38 @@ ul{
 
 }
 
+/* header news section */
 
+.header-new_section {
+  background-color: var(--Very-dark-blue);
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
+.header-new_section h2 {
+  color: var(--Soft-orange);
+  font-size: 2.5rem;
+}
 
+.news {
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 1.8rem 0;
+}
 
+.news h3 {
+  color: var(--Off-white);
+  font-size: 1.2rem;
+}
 
+.news p {
+  color:var(--Grayish-blue);
+  margin-top: 8px;
+}
 
+.no-border {
+  padding: 1.8rem 0 0 0;
+  border: none;
+}
