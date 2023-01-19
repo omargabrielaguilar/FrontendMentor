@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | News homepage</title>
   </head>
-  <body>
+  <body class="body comolomueveelbody">
     <nav class="navigation">
       <img src="./assets/images/logo.svg" alt="logo" />
       <ul class="navigation-list">
@@ -23,11 +23,39 @@
         <li class="item-list">Trending</li>
         <li class="item-list">Categories</li>
       </ul>
+      <img
+        onclick="openModal()"
+        src="./assets/images/icon-menu.svg"
+        alt="d"
+        class="mobile-burger"
+      />
+      <div class="mobile-nav">
+        <img onclick="closeModal()" class="mobile-burger-close"  src="./assets/images/icon-menu-close.svg" alt="d" class="" />
+  
+        <li class="item-list">Home</li>
+        <li class="item-list">New</li>
+        <li class="item-list">Popular</li>
+        <li class="item-list">Trending</li>
+        <li class="item-list">Categories</li>
+      </div>
     </nav>
+
+    
+
     <main class="main-section">
       <header class="header">
         <section class="header-bright_section">
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="web3.0" />
+          <img
+            class="desktop-image"
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="web3.0"
+          />
+
+          <img
+            class="mobile-image"
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="web3.0"
+          />
 
           <div class="title_section">
             <h1>The Bright Future of Web 3.0?</h1>
@@ -99,5 +127,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>

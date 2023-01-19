@@ -44,6 +44,10 @@ ul{
   color: var(--Soft-red);
 }
 
+.mobile-burger{
+  display: none;
+}
+
 .main-section {
   margin: 2rem auto;
 }
@@ -63,13 +67,21 @@ ul{
   gap: 2rem;
 }
 
-.header-bright_section img {
+.desktop-image {
   width: 100%;
+}
+
+.mobile-image {
+  display: none;
 }
 
 .title_section {
   display: flex;
   width: 100%;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .title_section > h1 {
@@ -190,8 +202,122 @@ ul{
 .text-item p {
   font-size: 13px;
   letter-spacing: 0.05rem;
+  color: var(--Dark-grayish-blue);
 }
 
 .text-item h5:hover {
   color: var(--Soft-red);
 }
+
+/* Responsive design now */
+
+@media (max-width:414px) {
+    body {
+      width: 90%;
+    }
+
+    .navigation ul {
+      display: none;
+    }
+    
+    .mobile-burger {
+      display: block;
+      cursor: pointer;
+    }
+
+    .main-section {
+      margin: 2rem auto;
+    }
+    
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    
+    .title_section {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .desktop-image {
+      display: none;
+    }
+    
+    .mobile-image {
+      display: block;
+      width: 100%;
+    }
+    
+    .title_section > h1 {
+      width: 100%;
+      font-size: 2.6rem;
+      line-height: 2.8rem;
+    }
+    
+    .description_section {
+      width: 100%;
+    }
+    
+    .description_section p {
+      font-size: 1rem;
+    }
+    
+    .btn {
+      width: 55%;
+    }
+    
+   
+    .footer {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .footer-item {
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .footer-item img {
+      width: 28%;
+    }
+    
+    .text-item{
+      gap: 0.5rem;
+    }
+
+    .mobile-nav {
+      display: block;
+      position: absolute;
+      left: 30%;
+      height: 100%;
+      background-color: white;
+      width: 65%;
+      visibility: hidden;
+      text-align: end;
+    }
+
+    .mobile-burger-close {
+      cursor:pointer;
+      margin-bottom: 4.5rem;
+    }
+    
+    .mobile-nav li {
+      display: block;
+      list-style: none;
+      text-align: start;
+      padding: 0.8rem 1.5rem;
+      color: var(--Dark-grayish-blue);
+      cursor:pointer;
+    }
+    
+    .mobile-nav li:hover {
+      color: var(--Soft-red);
+    }
+
+    .navList-mobile {
+      visibility: visible;
+    }
+}
+
