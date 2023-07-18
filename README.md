@@ -1,2 +1,2 @@
-# All-Frontend-Projects-2022
+# Proyectos
 Recopilación de los proyectos realizados de html - css - javascript (beginner)
